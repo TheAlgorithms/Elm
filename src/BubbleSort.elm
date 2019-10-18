@@ -1,7 +1,6 @@
-module BubbleSort exposing (..)
+module BubbleSort exposing (output)
 
-import List exposing (length)
-import Util exposing (listToString)
+import Util exposing (sortingOutputDef)
 
 
 bubbleSort : List Int -> List Int
@@ -36,16 +35,4 @@ bubbleSort inputList =
 
 output : List String -> String
 output args =
-    let
-        log argList = Debug.log "Sorting List" argList
-        defaultList = [ 4, 23, 6, 78, 1, 54, 231, 9, 12 ]
-    in
-        case length args of
-            0 ->
-                listToString <| bubbleSort <| log <| defaultList
-
-            1 ->
-                listToString <| bubbleSort <| log <| defaultList
-
-            _ ->
-                listToString <| bubbleSort <| log <| Util.argsToList args
+    sortingOutputDef args bubbleSort
