@@ -25,7 +25,7 @@ listToString input =
 
 
 sortingOutputDef : List String -> (List Int -> List Int) -> String
-sortingOutputDef args sortingAlgo =
+sortingOutputDef args sorting_algo =
     let
         log argList =
             Debug.log "Sorting List" argList
@@ -35,10 +35,10 @@ sortingOutputDef args sortingAlgo =
     in
     case length args of
         0 ->
-            listToString <| sortingAlgo <| log <| defaultList
+            listToString <| sorting_algo <| log <| defaultList
 
         1 ->
-            listToString <| sortingAlgo <| log <| defaultList
+            listToString <| sorting_algo <| log <| defaultList
 
         _ ->
-            listToString <| sortingAlgo <| log <| argsToList args
+            listToString <| sorting_algo <| log <| argsToList args

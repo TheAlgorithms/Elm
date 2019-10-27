@@ -12,7 +12,7 @@ These implementations are for learning purposes. They may be less efficient than
 ### Install run-elm
 Run the following to install [run-elm](https://github.com/jfairbank/run-elm)
 ```shell script
-npm install -f run-elm
+$ npm install -f run-elm
 ```
 
 ### Execute Elm
@@ -20,7 +20,7 @@ npm install -f run-elm
 Every ELM file has default run in it, and can just be executed using run-elm <file_path>
 
 ```shell script
-run-elm src/BubbleSort.elm
+$ run-elm src/Sorting/BubbleSort.elm
 Sorting List: [4,23,6,78,1,54,231,9,12]
 1,4,6,9,12,23,54,78,231
 ```
@@ -28,11 +28,21 @@ Sorting List: [4,23,6,78,1,54,231,9,12]
 Some files also have option to take arguments as input
 
 ```shell script
-run-elm src/BubbleSort.elm 23 45 76 34 65 98
+$ run-elm src/Sorting/BubbleSort.elm 23 45 76 34 65 98
 Sorting List: [23,45,76,34,65,98]
 23,34,45,65,76,98
 ```
 
+**OR**
+
+if you want to run all the programs with default arguments
+```shell script
+$ run-elm src/Main.elm
+Sorting List: [4,23,6,78,1,54,231,9,12]
+Running Insertion sort: "1,4,6,9,12,23,54,78,231"
+Sorting List: [4,23,6,78,1,54,231,9,12]
+Running Bubble sort: "1,4,6,9,12,23,54,78,231"
+```
 
 ## Owners
 

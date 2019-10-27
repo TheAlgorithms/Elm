@@ -1,16 +1,16 @@
 module Main exposing (output)
 
-import BubbleSort
-import InsertionSort
+import BubbleSort as Bubble
+import InsertionSort as Insertion
 
 
 output : List String -> String
 output args =
     let
         bubble =
-            Debug.log "Running Bubble sort" <| BubbleSort.output []
+            Debug.log "Running Bubble sort" <| Bubble.output []
 
         insertion =
-            Debug.log "Running Insertion sort" <| InsertionSort.output []
+            Debug.log "Running Insertion sort" <| Insertion.output []
     in
     ""
