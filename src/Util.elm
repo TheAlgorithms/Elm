@@ -28,7 +28,7 @@ sortingOutputDef : List String -> (List Int -> List Int) -> String
 sortingOutputDef args sorting_algo =
     let
         log argList =
-            Debug.log "Sorting List" argList
+            Debug.log "Sorting List           " argList
 
         defaultList =
             [ 4, 23, 6, 78, 1, 54, 231, 9, 12 ]
