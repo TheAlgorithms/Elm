@@ -12,7 +12,7 @@ These implementations are for learning purposes. They may be less efficient than
 ### Install run-elm
 Run the following to install [run-elm](https://github.com/jfairbank/run-elm)
 ```shell script
-$ npm install -f run-elm
+$ npm install -g run-elm
 ```
 
 ### Execute Elm
