@@ -7,12 +7,6 @@
 
 These implementations are for learning purposes. They may be less efficient than the implementations in the Elm standard library.
 
-## Owners
-
-Anup Kumar Panwar
-&nbsp; [[Gmail](mailto:1anuppanwar@gmail.com?Subject=The%20Algorithms%20-%20Elm)
-&nbsp; [GitHub](https://github.com/anupkumarpanwar)
-&nbsp; [LinkedIn](https://www.linkedin.com/in/anupkumarpanwar/)]
 
 ## Community Channel
 
