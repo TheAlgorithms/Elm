@@ -1,4 +1,4 @@
-module BubbleSort exposing (output)
+module BubbleSort exposing (output, sort)
 
 import Util exposing (sortingOutputDef)
 
@@ -17,21 +17,23 @@ bubbleSort inputList =
                         bubble (h1 :: tail) (h2 :: tempList) result
 
                 h1 :: [] ->
-                    sort tempList (h1 :: result)
+                    doSort tempList (h1 :: result)
 
                 [] ->
                     result
 
-        sort : List Int -> List Int -> List Int
-        sort source result =
+        doSort : List Int -> List Int -> List Int
+        doSort source result =
             if List.isEmpty source then
                 result
 
             else
                 bubble source [] result
     in
-    sort inputList []
+      doSort inputList []
 
+sort: List Int -> List Int
+sort = bubbleSort
 
 output : List String -> String
 output args =

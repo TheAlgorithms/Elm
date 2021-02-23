@@ -1,4 +1,4 @@
-module MergeSort exposing (..)
+module MergeSort exposing (output, sort)
 
 import List exposing (drop, length, take)
 import Util exposing (sortingOutputDef)
@@ -41,6 +41,9 @@ mergeSort inputList =
             mergeJoin (mergeSort <| take (length inputList // 2) inputList)
                 (mergeSort <| drop (length inputList // 2) inputList)
 
+
+sort: List Int -> List Int
+sort = mergeSort
 
 output : List String -> String
 output args =

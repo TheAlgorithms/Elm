@@ -1,4 +1,4 @@
-module InsertionSort exposing (output)
+module InsertionSort exposing (output, sort)
 
 import List exposing (head, singleton, tail)
 import Util
@@ -27,6 +27,8 @@ insertionSort inputList =
         head :: tail ->
             insert head <| insertionSort tail
 
+sort: List Int -> List Int
+sort = insertionSort
 
 output : List String -> String
 output args =

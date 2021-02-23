@@ -1,4 +1,4 @@
-module SelectionSort exposing (output)
+module SelectionSort exposing (output, sort)
 
 import Util
 
@@ -41,6 +41,8 @@ selectionSort unsorted =
             in
             Tuple.first firstSorted :: selectionSort (Tuple.second firstSorted)
 
+sort: List Int -> List Int
+sort = selectionSort
 
 output : List String -> String
 output args =

@@ -43,6 +43,15 @@ Sorting List: [4,23,6,78,1,54,231,9,12]
 Running Bubble sort: "1,4,6,9,12,23,54,78,231"
 ```
 
+**OR**
+
+use the Elm repl:
+```
+elm-repl
+> import Main
+> Main.output [""]
+```
+
 ## Owners
 
 Anup Kumar Panwar
