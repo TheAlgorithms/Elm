@@ -3,6 +3,7 @@ module Main exposing (output)
 import BubbleSort as Bubble
 import InsertionSort as Insertion
 import MergeSort as Merge
+import QuickSort as Quick
 import SelectionSort as Selection
 
 
@@ -20,5 +21,10 @@ output args =
 
         merge =
             Debug.log "Running Merge sort     " <| Merge.output []
+ 
+        quick =
+            Debug.log "Running Quick sort     " <| Quick.output []
     in
     ""
+
+
