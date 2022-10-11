@@ -32,11 +32,11 @@ sum : BTree number -> number
 sum tree = fold (\recleft root recright -> root + recleft + recright) (0) tree
 
 inorder : BTree a -> List a
-inorder tree = 
-    case tree of
-        Nil -> []
-        Node root left right -> 
-            (inorder left) ++ (root::(inorder right)) 
+inorder tree = fold (\recleft root recright -> recleft ++ (root::recright)) ([]) tree
+    -- case tree of
+    --     Nil -> []
+    --     Node root left right -> 
+    --         (inorder left) ++ (root::(inorder right)) 
 
 preorder : BTree a -> List a
 preorder tree = 
