@@ -26,29 +26,16 @@ map : (a -> b) -> BTree a -> BTree b
 map f = fold (\leftTree root rightTree -> Node (f root) leftTree rightTree) (Nil)
 
 contains : comparable -> BTree comparable -> Bool
-contains n = fold (\i r d -> r == n || i || d) (False)
+contains n = fold (\lr r rr -> r == n || lr || rr) (False)
 
 sum : BTree number -> number
 sum tree = fold (\recleft root recright -> root + recleft + recright) (0) tree
 
 inorder : BTree a -> List a
 inorder tree = fold (\recleft root recright -> recleft ++ (root::recright)) ([]) tree
-    -- case tree of
-    --     Nil -> []
-    --     Node root left right -> 
-    --         (inorder left) ++ (root::(inorder right)) 
 
 preorder : BTree a -> List a
-preorder tree = 
-    case tree of
-        Nil -> []
-        Node root left right -> 
-            root :: (preorder left) ++ (preorder right)
+preorder tree = fold (\recleft root recright -> root :: recleft ++ recright) ([]) tree
 
 postorder : BTree a -> List a
-postorder tree = 
-    case tree of
-        Nil -> []
-        Node root left right -> 
-            (preorder left) ++ (preorder right) ++ [root]
-
+postorder tree = fold (\recleft root recright -> recleft ++ recright ++ [root]) ([]) tree
