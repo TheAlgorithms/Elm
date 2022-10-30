@@ -43,18 +43,6 @@ Sorting List: [4,23,6,78,1,54,231,9,12]
 Running Bubble sort: "1,4,6,9,12,23,54,78,231"
 ```
 
-## Owners
-
-Anup Kumar Panwar
-&nbsp; [[Gmail](mailto:1anuppanwar@gmail.com?Subject=The%20Algorithms%20-%20Elm)
-&nbsp; [GitHub](https://github.com/anupkumarpanwar)
-&nbsp; [LinkedIn](https://www.linkedin.com/in/anupkumarpanwar/)]
-
-Chetan Kaushik
-&nbsp; [[Gmail](mailto:dynamitechetan@gmail.com?Subject=The%20Algorithms%20-%20Elm)
-&nbsp; [GitHub](https://github.com/dynamitechetan)
-&nbsp; [LinkedIn](https://www.linkedin.com/in/chetankaushik/)]
-
 ## Community Channel
 
 We're on [Gitter](https://gitter.im/TheAlgorithms)! Please join us.
